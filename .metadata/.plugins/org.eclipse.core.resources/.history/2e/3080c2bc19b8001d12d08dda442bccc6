@@ -1,0 +1,41 @@
+package customAnnotate;
+
+import java.lang.*;
+import java.lang.annotation.*;
+import java.lang.reflect.Method;
+import java.lang.NullPointerException;
+
+@Retention(RetentionPolicy.SOURCE)
+@Target(ElementType.METHOD)
+@interface Mysinglevalue{
+	int value();
+}
+
+@Retention(RetentionPolicy.SOURCE)
+@Target(ElementType.METHOD)
+@interface Mysinglevalue2{
+	int value();
+}
+
+public class Singlevalue {
+	@Mysinglevalue(value=100)
+	public void printto()
+	{
+		System.out.println("hey this is single valued annotation");
+	}
+	public static void main(String[] args) throws NoSuchMethodException, SecurityException {
+		// TODO Auto-generated method stub
+		try {
+		Singlevalue sgv = new Singlevalue();
+		sgv.printto();
+		Method m = sgv.getClass().getMethod("printto");
+		Mysinglevalue sv = m.getAnnotation(Mysinglevalue.class);
+		System.out.println(sv.value() + " is value of annotation");
+		}
+		catch(NullPointerException nse)
+		{
+			System.out.println("Please change retention policy to RUNTIME");
+		}
+	}
+
+}

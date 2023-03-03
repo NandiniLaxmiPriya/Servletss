@@ -1,0 +1,34 @@
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServlet;
+
+public class marks extends HttpServlet{
+	public void service(ServletRequest req, ServletResponse res) throws IOException, ServletException
+	{
+		int i = Integer.parseInt(req.getParameter("num1"));
+		int j = Integer.parseInt(req.getParameter("num2"));
+		int k = Integer.parseInt(req.getParameter("num3"));
+		int l = Integer.parseInt(req.getParameter("num4"));
+		int m = Integer.parseInt(req.getParameter("num5"));
+		int n = Integer.parseInt(req.getParameter("num6"));
+		int total = i + j + k + l + m + n;
+		float avg = total / 6;
+		
+		PrintWriter out = res.getWriter();
+		out.println("Maths : " + i );	
+		out.println("English : " + j );	
+		out.println("Hindi : " + k);	
+		out.println("Science : " + l);	
+		out.println("Social Science : " + m);	
+		out.println("IT : " + n);	
+		out.println("Total Marks : "+ total);	
+		out.println("Average: "+avg);
+	}
+
+}
+	

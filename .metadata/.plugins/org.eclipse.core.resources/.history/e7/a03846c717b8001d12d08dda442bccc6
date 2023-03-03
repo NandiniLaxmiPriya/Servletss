@@ -1,0 +1,23 @@
+package customAnnotate;
+
+import java.lang.*;
+import java.lang.annotation.*;
+
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.SOURCE)
+@interface Mysinglevalue{
+	int value() default 221;
+}
+
+
+public class Singlevalue {
+	public void print()
+	{
+		System.out.println("hey this is sing valued annotation");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

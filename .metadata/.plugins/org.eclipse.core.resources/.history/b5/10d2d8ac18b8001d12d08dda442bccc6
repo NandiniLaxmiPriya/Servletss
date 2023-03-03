@@ -1,0 +1,29 @@
+package customAnnotate;
+
+import java.lang.*;
+import java.lang.annotation.*;
+import java.lang.reflect.Method;
+
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.SOURCE)
+@interface Mysinglevalue{
+	int valuee() default 221;
+}
+
+
+public class Singlevalue {
+	@Mysinglevalue(valuee=100)
+	public void printto()
+	{
+		System.out.println("hey this is single valued annotation");
+	}
+	public static void main(String[] args) throws NoSuchMethodException, SecurityException {
+		// TODO Auto-generated method stub
+		Singlevalue sgv = new Singlevalue();
+		sgv.printto();
+		Method m = sgv.getClass().getMethod("printto");
+		Mysinglevalue sv = m.getAnnotation(Mysinglevalue.class);
+		System.out.println(sv.valuee() + "is value of annotation");
+	}
+
+}

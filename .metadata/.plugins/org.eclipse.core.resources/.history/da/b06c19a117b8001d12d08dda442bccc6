@@ -1,0 +1,18 @@
+package customAnnotate;
+
+import java.lang.*;
+import java.lang.annotation.*;
+
+@interface Mysinglevalue{
+	int value() default 221;
+}
+
+
+public class Singlevalue {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

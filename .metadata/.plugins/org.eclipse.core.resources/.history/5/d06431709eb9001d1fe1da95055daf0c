@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="Valido" align="center">
+Enter username: <input type="text" id="uname"/>
+Enter password: <input type="password" id="pass"/>
+</form>
+</body>
+</html>

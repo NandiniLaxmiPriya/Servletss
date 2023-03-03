@@ -1,0 +1,21 @@
+package customAnnotate;
+
+
+import java.lang.*;
+import java.lang.annotation.*;
+
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.CONSTRUCTOR)
+@interface Mymultivalued{
+	
+}
+
+public class Multivalued {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
