@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/beehyv/eclipse-workspace/WebDevUsingJava/restprac"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -25,10 +26,20 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.prac.assignment"/>
+			<item value="com.web.restprac"/>
+			<item value="com.web.pracrest"/>
+			<item value="com.web.PracRest"/>
 		</list>
 		<list key="groupId">
+			<item value="com.prac"/>
+			<item value="com.web"/>
 		</list>
 		<list key="artifactId">
+			<item value="assignment"/>
+			<item value="restprac"/>
+			<item value="pracrest"/>
+			<item value="PracRest"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -44,12 +55,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.firstproject"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="butterfly"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -66,5 +75,11 @@
 	<section name="org.eclipse.m2e.core.pom.overview">
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="450"/>
+		<item key="x" value="600"/>
+		<item key="y" value="159"/>
 	</section>
 </section>
