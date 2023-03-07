@@ -26,16 +26,19 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.hello.mode"/>
 			<item value="com.prac.assignment"/>
 			<item value="com.web.restprac"/>
 			<item value="com.web.pracrest"/>
 			<item value="com.web.PracRest"/>
 		</list>
 		<list key="groupId">
+			<item value="com.hello"/>
 			<item value="com.prac"/>
 			<item value="com.web"/>
 		</list>
 		<list key="artifactId">
+			<item value="mode"/>
 			<item value="assignment"/>
 			<item value="restprac"/>
 			<item value="pracrest"/>
